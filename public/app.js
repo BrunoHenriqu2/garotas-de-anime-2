@@ -2,29 +2,31 @@ function pesquisar() {
     let section = document.querySelector("section#resultados-pesquisa")
     let campoPesquisa = document.querySelector("input#campo-pesquisa")
 
-    let resultado = "" // já foi uma variável indefinida
+    let resultado = ""
     let titulo = ""
     let descricao = ""
 
-    let campoPesquisaFormatted = campoPesquisa.value.toLowerCase()
+    let pesquisa = campoPesquisa.value.toLowerCase()
+    fetch("/")
+    .then(response => response.json())
+    .then(data => console.log(data))
+    // for (let dado of dados) {
+    //     titulo = dado.titulo.toLowerCase()
+    //     descricao = dado.descricao.toLowerCase()
 
-    for (let dado of dados) {
-        titulo = dado.titulo.toLowerCase()
-        descricao = dado.descricao.toLowerCase()
-
-        if (titulo.includes(campoPesquisaFormatted) || descricao.includes(campoPesquisaFormatted)) {
-            resultado += `
-        <div class="item-resultado">
-            <h2>${dado.titulo}</h2>
-            <p class="descricao-meta">${dado.descricao}</p>
-            <img src="${dado.imagem}" alt="Uma foto de ${dado.titulo}">
-            <a href="${dado.link}" target="_blank">Mais informações sobre a obra da personagem </a>
-        </div>
-    `
-        }
-    }
+    //     if (titulo.includes(pesquisa) || descricao.includes(pesquisa)) {
+    //         resultado += `
+    //     <div class="item-resultado">
+    //         <h2>${dado.titulo}</h2>
+    //         <p class="descricao-meta">${dado.descricao}</p>
+    //         <img src="${dado.imagem}" alt="Uma foto de ${dado.titulo}">
+    //         <a href="${dado.link}" target="_blank">Mais informações sobre a obra da personagem </a>
+    //     </div>
+    // `
+    //     }
+    // }
     
-    if (!campoPesquisa) {
+    if (!pesquisa) {
         resultado = "<p>Você não pesquisou nada, bocó!</p>" 
     }
 

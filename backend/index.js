@@ -1,5 +1,5 @@
 import express from "express"
-import dados from "./dados.js"
+//import dados from "./dados.js"
 
 const app = express()
 
@@ -12,12 +12,6 @@ app.get("/", (req, res) => {
             imagem: "imagens/Yoshiko-Hanabatake.png",
             link: "http://pt.wikipedia.org/wiki/Aho-Girl"
         },
-        /*{
-            titulo: "Noko Shikanoko",
-            descricao: "Noko Shikanoko é uma jovem tímida e gentil de My Deer Friend Nokotan. Com sua personalidade doce e inocente, ela conquista o coração dos espectadores. Apesar de sua aparência frágil, ela possui uma força interior que a impulsiona a superar seus desafios.",
-            imagem: "imagens/Noko-Shikanoko.png",
-            link: "https://pt.wikipedia.org/wiki/My_Deer_Friend_Nokotan"
-        }, a IA confundiu tudo os personagem dnv :3*/
         {
             titulo: "Noko Shikanoko",
             descricao: "Noko Shikanoko é uma personagem encantadora e peculiar do anime My Deer Friend Nokotan. Com sua aparência de cervo e personalidade gentil, Noko conquista o coração de todos ao seu redor.",
@@ -54,7 +48,7 @@ app.get("/", (req, res) => {
             imagem: "imagens/Fern.png",
             link: "https://pt.wikipedia.org/wiki/Frieren_e_a_Jornada_para_o_Al%C3%A9m",
         },
-    ];
+    ]
 
     console.log(dados)
     res.json(dados)
