@@ -49,9 +49,8 @@ app.get("/", (req, res) => {
             link: "https://pt.wikipedia.org/wiki/Frieren_e_a_Jornada_para_o_Al%C3%A9m",
         },
     ]
-
-    console.log(dados)
-    res.json(dados)
+    
+    res.send(dados)
 })
 
 app.listen(8082, () => {
