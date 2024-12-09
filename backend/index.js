@@ -50,7 +50,7 @@ app.get("/teste", (req, res) => {
         },
     ]
 
-    res.send(dados)
+    res.status(200).send(dados)
 })
 
 app.listen(8082, () => {
