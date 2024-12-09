@@ -8,7 +8,7 @@ function pesquisar() {
 
     let pesquisa = campoPesquisa.value.toLowerCase()
     fetch("/")
-    .then(response => response.json())
+    .then(response => console.log(response))
     .then(data => console.log(data))
     // for (let dado of dados) {
     //     titulo = dado.titulo.toLowerCase()
