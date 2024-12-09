@@ -7,7 +7,7 @@ function pesquisar() {
     let descricao = ""
 
     let pesquisa = campoPesquisa.value.toLowerCase()
-    fetch("/")
+    fetch("/teste")
     .then(response => console.log(response))
     .then(data => console.log(data))
     // for (let dado of dados) {

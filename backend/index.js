@@ -3,7 +3,7 @@ import express from "express"
 
 const app = express()
 
-app.get("/", (req, res) => {
+app.get("/teste", (req, res) => {
 
     let dados = [
         {
@@ -49,7 +49,7 @@ app.get("/", (req, res) => {
             link: "https://pt.wikipedia.org/wiki/Frieren_e_a_Jornada_para_o_Al%C3%A9m",
         },
     ]
-    
+
     res.send(dados)
 })
 
