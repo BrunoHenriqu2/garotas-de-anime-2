@@ -4,16 +4,16 @@ function getData(pesquisa) {
     let resultado = ""
 
     fetch("/api/dados.json", { method: "GET" })
-    .then(response => response.json())
-    .then(data => {
-        for (let dado of data) {
+        .then(response => response.json())
+        .then(data => {
+            for (let dado of data) {
 
-            titulo = dado.titulo.toLowerCase()
-            descricao = dado.descricao.toLowerCase()
-            console.log(titulo.includes(pesquisa))
-            if (titulo.includes(pesquisa) || descricao.includes(pesquisa)) {
-                console.log("Achei!")
-                resultado = `
+                titulo = dado.titulo.toLowerCase()
+                descricao = dado.descricao.toLowerCase()
+                console.log(titulo.includes(pesquisa))
+                if (titulo.includes(pesquisa) || descricao.includes(pesquisa)) {
+                    console.log("Achei!")
+                    resultado = `
              <div class="item-resultado">
                  <h2>${titulo}</h2>
                  <p class="descricao-meta">${descricao}</p>
@@ -21,11 +21,11 @@ function getData(pesquisa) {
                  <a href="${dado.link}" target="_blank">Mais informações sobre a obra da personagem</a>
              </div>
          `
-                console.log(resultado)
-                return resultado
+                    console.log(resultado)
+                    return resultado
+                }
             }
-        }
-    })
+        })
 }
 
 function browse() {
@@ -42,7 +42,7 @@ function browse() {
     console.log(resultado)
 
     if (resultado == "") { // Antigamente eu estava verificando se a variável era indefinida, mas tinha algumas garotas que eu peguei da mesma obra, então as vezes elas citavam os mesmos nomes na descrição ou no título. Eu troquei para verificar uma string vazia.
-       resultado = "<p>Esta personagem não existe, ou não consta na minha base de dados super avançada de última geração!</p>"
+        resultado = "<p>Esta personagem não existe, ou não consta na minha base de dados super avançada de última geração!</p>"
     }
     section.innerHTML = resultado
 }
