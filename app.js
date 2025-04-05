@@ -1,4 +1,4 @@
-function pesquisar(input) {
+function pesquisar() {
     let section = document.querySelector("section#resultados-pesquisa")
     let campoPesquisa = document.querySelector("input#campo-pesquisa")
 
@@ -7,14 +7,15 @@ function pesquisar(input) {
     let descricao = ""
 
     let pesquisa = campoPesquisa.value.toLowerCase()
-    console.log(input)
+    
     fetch("/api/dados.json", { method: "GET" })
         .then(response => response.json())
         .then(data => {
             for (let dado of data) {
-                console.log(dado, pesquisa)
+
                 titulo = dado.titulo.toLowerCase()
                 descricao = dado.descricao.toLowerCase()
+                console.log(pesquisa, titulo, descricao)
 
                 if (titulo.includes(pesquisa) || descricao.includes(pesquisa)) {
                     resultado += `
@@ -25,6 +26,7 @@ function pesquisar(input) {
                      <a href="${dado.link}" target="_blank">Mais informações sobre a obra da personagem </a>
                  </div>
              `
+                    break
                 }
             }
         })
