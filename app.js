@@ -38,8 +38,8 @@ function pesquisar() {
 
     console.log(resultado)
 
-    if (resultado == "") { // Antigamente eu estava verificando se a variável era indefinida, mas tinha algumas garotas que eu peguei da mesma obra, então as vezes elas citavam os mesmos nomes na descrição ou no título. Eu troquei para verificar uma string vazia.
-        resultado = "<p>Esta personagem não existe, ou não consta na minha base de dados super avançada de última geração!</p>"
-    }
+    //if (resultado == "") { // Antigamente eu estava verificando se a variável era indefinida, mas tinha algumas garotas que eu peguei da mesma obra, então as vezes elas citavam os mesmos nomes na descrição ou no título. Eu troquei para verificar uma string vazia.
+   //    resultado = "<p>Esta personagem não existe, ou não consta na minha base de dados super avançada de última geração!</p>"
+    //}
     section.innerHTML = resultado
 }
