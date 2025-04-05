@@ -1,6 +1,7 @@
 function getData() {
     let titulo = ""
     let descricao = ""
+    let resultado = ""
 
     fetch("/api/dados.json", { method: "GET" })
     .then(response => response.json())
