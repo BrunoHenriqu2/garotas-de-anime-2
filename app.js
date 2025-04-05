@@ -12,6 +12,7 @@ function pesquisar() {
         .then(response => response.json())
         .then(data => {
             for (let dado of data) {
+                console.log(dado)
                 titulo = dado.titulo.toLowerCase()
                 descricao = dado.descricao.toLowerCase()
 
