@@ -14,7 +14,7 @@ function getData(pesquisa) {
                 console.log(titulo.includes(pesquisa))
                 if (titulo.includes(pesquisa) || descricao.includes(pesquisa)) {
                     console.log("Achei!")
-                    resultado = `
+                    let a = `
              <div class="item-resultado">
                  <h2>${titulo}</h2>
                  <p class="descricao-meta">${descricao}</p>
@@ -22,8 +22,9 @@ function getData(pesquisa) {
                  <a href="${dado.link}" target="_blank">Mais informações sobre a obra da personagem</a>
              </div>
          `
+                    resultado = a
                     console.log(resultado)
-                    return resultado
+                    return a
                 }
             }
         })
