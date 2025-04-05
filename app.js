@@ -1,4 +1,4 @@
-function getData(pesquisa) {
+async function getData(pesquisa) {
                 
     let titulo = ""
     let descricao = ""
@@ -32,12 +32,12 @@ function getData(pesquisa) {
     return resultado
 }
 
-function browse() {
+async function browse() {
     let section = document.querySelector("section#resultados-pesquisa")
     let campoPesquisa = document.querySelector("input#campo-pesquisa")
 
     let pesquisa = campoPesquisa.value.toLowerCase()
-    let resultado = getData(pesquisa)
+    let resultado = await getData(pesquisa)
 
     if (pesquisa === "") {
         resultado = "<p>Você não pesquisou nada, bocó!</p>"
