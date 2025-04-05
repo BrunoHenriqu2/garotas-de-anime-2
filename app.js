@@ -1,11 +1,12 @@
 function getData(pesquisa) {
+                
+    let titulo = ""
+    let descricao = ""
+    let resultado = ""
+
     fetch("/api/dados.json", { method: "GET" })
         .then(response => response.json())
         .then(data => {
-            
-            let titulo = ""
-            let descricao = ""
-            let resultado = ""
 
             for (let dado of data) {
 
@@ -14,7 +15,7 @@ function getData(pesquisa) {
                 console.log(titulo.includes(pesquisa))
                 if (titulo.includes(pesquisa) || descricao.includes(pesquisa)) {
                     console.log("Achei!")
-                    let a = `
+                    resultado = `
              <div class="item-resultado">
                  <h2>${titulo}</h2>
                  <p class="descricao-meta">${descricao}</p>
@@ -22,12 +23,13 @@ function getData(pesquisa) {
                  <a href="${dado.link}" target="_blank">Mais informações sobre a obra da personagem</a>
              </div>
          `
-                    resultado = a
                     console.log(resultado)
-                    return a
+                    break
                 }
             }
         })
+
+    return resultado
 }
 
 function browse() {
