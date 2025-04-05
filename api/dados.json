@@ -9,7 +9,7 @@
         "titulo": "Noko Shikanoko",
         "descricao": "Noko Shikanoko é uma personagem encantadora e peculiar do anime My Deer Friend Nokotan. Com sua aparência de cervo e personalidade gentil, Noko conquista o coração de todos ao seu redor.",
         "imagem": "imagens/Noko-Shikanoko.png",
-        "link": "https://pt.wikipedia.org/wiki/My_Deer_Friend_Nokotan",
+        "link": "https://pt.wikipedia.org/wiki/My_Deer_Friend_Nokotan"
     },
     {
         "titulo": "Rem",
@@ -33,12 +33,12 @@
         "titulo": "Frieren",
         "descricao": "Frieren, uma elfa imortal, é a protagonista de Frieren Beyond Journey's End. Após a morte de seus companheiros de aventura, Frieren embarca em uma jornada solitária, confrontando a mortalidade e o significado da vida. Sua sabedoria e poderes mágicos contrastam com sua aparente falta de emoções.",
         "imagem": "imagens/Frieren.png",
-        "link": "https://pt.wikipedia.org/wiki/Frieren_e_a_Jornada_para_o_Al%C3%A9m",
+        "link": "https://pt.wikipedia.org/wiki/Frieren_e_a_Jornada_para_o_Al%C3%A9m"
     },
     {
         "titulo": "Fern",
         "descricao": "Fern é uma companheira de jornada de Frieren, em Frieren Beyond Journey's End. Conhecida por sua força física e personalidade direta. Apesar de sua aparência jovem, ela possui uma sabedoria e experiência consideráveis. Fern é leal a sua mestra e amigos.",
         "imagem": "imagens/Fern.png",
-        "link": "https://pt.wikipedia.org/wiki/Frieren_e_a_Jornada_para_o_Al%C3%A9m",
+        "link": "https://pt.wikipedia.org/wiki/Frieren_e_a_Jornada_para_o_Al%C3%A9m"
     }
 ]
