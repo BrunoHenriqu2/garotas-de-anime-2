@@ -15,7 +15,6 @@ function pesquisar() {
 
                 titulo = dado.titulo.toLowerCase()
                 descricao = dado.descricao.toLowerCase()
-                console.log(pesquisa, titulo, descricao)
 
                 if (titulo.includes(pesquisa) || descricao.includes(pesquisa)) {
                     resultado = `
@@ -38,6 +37,6 @@ function pesquisar() {
     if (resultado == "") { // Antigamente eu estava verificando se a variável era indefinida, mas tinha algumas garotas que eu peguei da mesma obra, então as vezes elas citavam os mesmos nomes na descrição ou no título. Eu troquei para verificar uma string vazia.
         resultado = "<p> Esta personagem não existe, ou não consta na minha base de dados super avançada de última geração! </p>"
     }
-
+    console.log(resultado)
     section.innerHTML = resultado
 }
