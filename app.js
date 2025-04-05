@@ -1,4 +1,4 @@
-function pesquisar() {
+function pesquisar(input) {
     let section = document.querySelector("section#resultados-pesquisa")
     let campoPesquisa = document.querySelector("input#campo-pesquisa")
 
@@ -7,7 +7,7 @@ function pesquisar() {
     let descricao = ""
 
     let pesquisa = campoPesquisa.value.toLowerCase()
-
+    console.log(input)
     fetch("/api/dados.json", { method: "GET" })
         .then(response => response.json())
         .then(data => {
