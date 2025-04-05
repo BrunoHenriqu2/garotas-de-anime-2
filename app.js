@@ -1,11 +1,12 @@
 function getData(pesquisa) {
-    let titulo = ""
-    let descricao = ""
-    let resultado = ""
-
     fetch("/api/dados.json", { method: "GET" })
         .then(response => response.json())
         .then(data => {
+            
+            let titulo = ""
+            let descricao = ""
+            let resultado = ""
+
             for (let dado of data) {
 
                 titulo = dado.titulo.toLowerCase()
