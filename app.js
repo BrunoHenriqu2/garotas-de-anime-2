@@ -15,7 +15,7 @@ function pesquisar() {
 
                 titulo = dado.titulo.toLowerCase()
                 descricao = dado.descricao.toLowerCase()
-
+                console.log(titulo.includes(pesquisa))
                 if (titulo.includes(pesquisa) || descricao.includes(pesquisa)) {
                     resultado = `
                  <div class="item-resultado">
