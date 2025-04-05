@@ -18,11 +18,11 @@ function pesquisar() {
                 console.log(pesquisa, titulo, descricao)
 
                 if (titulo.includes(pesquisa) || descricao.includes(pesquisa)) {
-                    resultado += `
+                    resultado = `
                  <div class="item-resultado">
-                     <h2>${dado.titulo}</h2>
-                     <p class="descricao-meta">${dado.descricao}</p>
-                     <img src="${dado.imagem}" alt="Uma foto de ${dado.titulo}">
+                     <h2>${titulo}</h2>
+                     <p class="descricao-meta">${descricao}</p>
+                     <img src="${dado.imagem}" alt="Uma foto de ${titulo}">
                      <a href="${dado.link}" target="_blank">Mais informações sobre a obra da personagem </a>
                  </div>
              `
