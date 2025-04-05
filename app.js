@@ -17,9 +17,9 @@ async function getData(pesquisa) {
                     console.log("Achei!")
                     resultado = `
              <div class="item-resultado">
-                 <h2>${titulo}</h2>
-                 <p class="descricao-meta">${descricao}</p>
-                 <img src="${dado.imagem}" alt="Uma foto de ${titulo}">
+                 <h2>${dado.titulo}</h2>
+                 <p class="descricao-meta">${dado.descricao}</p>
+                 <img src="${dado.imagem}" alt="Uma foto de ${dado.titulo}">
                  <a href="${dado.link}" target="_blank">Mais informações sobre a obra da personagem</a>
              </div>
          `
