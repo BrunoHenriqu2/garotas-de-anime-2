@@ -4,7 +4,7 @@ async function getData(pesquisa) {
     let descricao = ""
     let resultado = ""
 
-    fetch("/api/dados.json", { method: "GET" })
+    await fetch("/api/dados.json", { method: "GET" })
         .then(response => response.json())
         .then(data => {
 
