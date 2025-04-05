@@ -32,9 +32,9 @@ function pesquisar() {
             }
         })
 
-    if (pesquisa === "") {
-        resultado = "<p>Você não pesquisou nada, bocó!</p>"
-    }
+    //if (pesquisa === "") {
+      //  resultado = "<p>Você não pesquisou nada, bocó!</p>"
+    //}
 
     console.log(resultado)
 
