@@ -14,10 +14,10 @@ async function getData(pesquisa) {
                 descricao = dado.descricao.toLowerCase()
 
                 if (titulo.includes(pesquisa) || descricao.includes(pesquisa)) {
-                    
+
                     resultado = `
              <div class="item-resultado">
-                 <h2>${dado.titulo}</h2>g
+                 <h2>${dado.titulo}</h2>
                  <p class="descricao-meta">${dado.descricao}</p>
                  <img src="${dado.imagem}" alt="Uma foto de ${dado.titulo}">
                  <a href="${dado.link}" target="_blank">Mais informações sobre a obra da personagem</a>
