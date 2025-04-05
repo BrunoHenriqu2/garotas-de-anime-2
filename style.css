@@ -35,7 +35,7 @@ section {
 section input {
     width: 60dvh; /* Largura dos inputs */
     /*max-width: 60dvh;  Largura máxima dos inputs */
-    border: none; /* Remove a borda padrão (Essa borda é padrão é muito feia pelo amor de Deus, agora eu aprendi a como tirar essa porcaria) */
+    border: none; /* Remove a borda padrão (Essa borda é padrão é muito feia pelo amor de Deus, agora eu aprendi como tirar essa porcaria) */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 1.5rem; /* Borda arredondada (opa, tá melhorando) */
     margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */

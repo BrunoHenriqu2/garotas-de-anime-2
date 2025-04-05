@@ -49,4 +49,4 @@ let dados = [
     },
 ];
 
-return dados
+export default dados

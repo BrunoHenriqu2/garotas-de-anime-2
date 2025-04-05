@@ -7,9 +7,9 @@ function pesquisar() {
     let descricao = ""
 
     let pesquisa = campoPesquisa.value.toLowerCase()
-    fetch("/teste")
-    .then(response => console.log(response))
-    .then(data => console.log(data))
+
+    fetch("/api/dados", {method: "GET"})
+    .then(console.log(response))
     // for (let dado of dados) {
     //     titulo = dado.titulo.toLowerCase()
     //     descricao = dado.descricao.toLowerCase()
@@ -26,7 +26,7 @@ function pesquisar() {
     //     }
     // }
     
-    if (!pesquisa) {
+    if (!pesquisa | pesquisa == "") {
         resultado = "<p>Você não pesquisou nada, bocó!</p>" 
     }
 
