@@ -1,4 +1,4 @@
-function getData() {
+function getData(pesquisa) {
     let titulo = ""
     let descricao = ""
     let resultado = ""
@@ -32,8 +32,8 @@ function browse() {
     let section = document.querySelector("section#resultados-pesquisa")
     let campoPesquisa = document.querySelector("input#campo-pesquisa")
 
-    let resultado = getData()
     let pesquisa = campoPesquisa.value.toLowerCase()
+    let resultado = getData(pesquisa)
 
     if (pesquisa === "") {
         resultado = "<p>Você não pesquisou nada, bocó!</p>"
